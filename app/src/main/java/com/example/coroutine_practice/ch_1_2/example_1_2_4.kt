@@ -13,7 +13,6 @@ suspend fun doOneTwoThree4() = coroutineScope {
     }
     job.join() // suspension point
 
-
     launch {
         println("launch2: ${Thread.currentThread().name}")
         println("1!")
